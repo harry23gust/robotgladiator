@@ -12,9 +12,12 @@ console.log(enemyNames.length);
 console.log(enemyNames[0]);
 console.log(enemyNames[3]);
 
+
+
 // fight function (now with parameter for enemy's name)
 var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {
+    
     // ask player if they'd like to fight or run
     var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
 
@@ -78,6 +81,7 @@ for (var i = 0; i < enemyNames.length; i++) {
 
     // pick new enemy to fight based on the index of the enemyNames array
     var pickedEnemyName = enemyNames[i];
+    enemyHealth = 50;
 
     // reset enemyHealth before starting new fight
     // enemyHealth = 50;
