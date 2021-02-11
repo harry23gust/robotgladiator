@@ -1,6 +1,6 @@
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
-var playerAttack = 10;
+var playerAttack = 15;
 var playerMoney = 10;
 
 
@@ -9,6 +9,12 @@ var enemyHealth = 50;
 var enemyAttack = 12;
 
 var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
+
+var confirmSkip = true;
+
+if (confirmSkip === true) {
+  // do something
+}
 
 // if player choses to fight, then fight
 if (promptFight === "fight" || promptFight === "FIGHT") {
